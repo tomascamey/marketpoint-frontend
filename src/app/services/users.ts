@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({ providedIn: 'root' })
 export class UsersService {
   private http = inject(HttpClient);
-  private apiUrl = 'http://localhost:3000/users';
+  private apiUrl = '[https://marketpoint-backend.onrender.com/users](https://marketpoint-backend.onrender.com/users)';
 
   obtenerUsuarios() {
     return this.http.get<any[]>(this.apiUrl);
