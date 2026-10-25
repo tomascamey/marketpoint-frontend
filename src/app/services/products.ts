@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProductsService {
   private http = inject(HttpClient);
-  private apiUrl = '[https://marketpoint-backend.onrender.com/products](https://marketpoint-backend.onrender.com/products)';
+  private apiUrl = 'https://marketpoint-backend.onrender.com/products';
 
   createProduct(product: any) {
     return this.http.post<any>(this.apiUrl, product);
