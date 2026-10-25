@@ -8,7 +8,7 @@ import { AuthService } from './auth';
 export class OrdersService {
   private http = inject(HttpClient);
   private authService = inject(AuthService);
-  private baseUrl = '[https://marketpoint-backend.onrender.com/orders](https://marketpoint-backend.onrender.com/orders)';
+  private baseUrl = 'https://marketpoint-backend.onrender.com/orders';
 
   private getHeaders() {
     const token = this.authService.getToken();
