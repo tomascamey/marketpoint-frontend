@@ -7,8 +7,8 @@ import { tap } from 'rxjs/operators';
 })
 export class AuthService {
   private http = inject(HttpClient);
-  private apiUrl = '[https://marketpoint-backend.onrender.com/auth](https://marketpoint-backend.onrender.com/auth)';
-  private usersUrl = '[https://marketpoint-backend.onrender.com/users](https://marketpoint-backend.onrender.com/users)';
+  private apiUrl = 'https://marketpoint-backend.onrender.com/auth';
+  private usersUrl = 'https://marketpoint-backend.onrender.com/users';
 
   login(credentials: { email: string; password: string }) {
     return this.http.post<any>(`${this.apiUrl}/login`, credentials).pipe(
