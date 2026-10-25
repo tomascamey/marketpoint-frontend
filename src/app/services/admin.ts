@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AdminService {
   private http = inject(HttpClient);
-  private baseUrl = 'http://localhost:3000';
+  private baseUrl = 'https://marketpoint-backend.onrender.com';
 
   // Obtiene todas las tiendas/tenants existentes
   getTiendas() {
